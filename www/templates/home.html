@@ -1,0 +1,31 @@
+<ion-view view-title="タスケテ">
+  <ion-content style="margin: 0 auto; text-align:center;" class="padding" scroll="false">
+    <div style="text-align:left;">{{location}}</div>
+    <a ng-click="calling('police')">
+      <div id="container">
+        <div id="dummy"></div>
+        <md-button id="element" class="round police md-button md-default-theme">
+          <img src="img/police.png" style="width: 9rem;">
+        </md-button>
+      </div>
+    </a>
+    <div id="container">
+      <div id="dummy"></div>
+      <a ng-click="calling('fire')">
+        <md-button id="element" class="round fire" type="submit">
+          <span class="ion-flame" style="font-size: 9rem;">
+          </span>
+        </md-button>
+      </a>
+    </div>
+    <a ng-click="calling('ambulance')">
+      <div id="container" class="last">
+        <div id="dummy"></div>
+        <md-button id="element" class="round ambulance" type="submit">
+          <span class="fa fa-ambulance" style="font-size: 7rem; margin-top: -0.8rem; margin-right: 0.8rem;">
+          </span>
+        </md-button>
+      </div>
+    </a>
+  </ion-content>
+</ion-view>

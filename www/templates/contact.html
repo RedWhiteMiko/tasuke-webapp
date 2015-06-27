@@ -1,0 +1,25 @@
+<ion-view view-title="Emergency Number">
+  <ion-content scroll="false">
+    <div style="">
+      <br>
+      <h2 style="padding-left: 1rem;"><span class="ion-person-stalker"></span> Contact</h2>
+      <br/>
+    </div>
+    <div class="list">
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Person 1</span>
+        <input type="text" placeholder="+81-111-222" ng-model="user.nums[0]">
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Person 2</span>
+        <input type="text" placeholder="+81-111-222" ng-model="user.nums[1]">
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Person 3</span>
+        <input type="text" placeholder="+81-111-222" ng-model="user.nums[2]">
+      </label>
+      <md-button class="md-raised md-accent" style="width: 96%; height: 3rem; text-align: center;" ng-click="register();">Register</md-button>
+    </div>
+
+  </ion-content>
+</ion-view>
